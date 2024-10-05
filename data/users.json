@@ -1,8 +1,14 @@
 [
-    {
-        "id": 1,
-        "username": "gellyrslls",
-        "password": "gelly12",
-        "email": "gellyrslls@gmail.com"
-    }
+  {
+    "id": 1,
+    "username": "gellyrslls",
+    "password": "gelly12",
+    "email": "gellyrslls@gmail.com"
+  },
+  {
+    "id": 2,
+    "username": "gelorosi",
+    "password": "gelo12",
+    "email": "gelorosi@gmail.com"
+  }
 ]
