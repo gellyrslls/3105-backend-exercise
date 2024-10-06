@@ -20,7 +20,7 @@ Use the curl commands shown below to test the API endpoints:
 ```bash
 curl -X POST http://localhost:3000/user/register \
 -H "Content-Type: application/json" \
--d '{"username": "gelorosi", "password": "gelo12", "email": "gelorosi@gmail.com"}'
+-d '{"username": "eanvelayo", "password": "password123", "email": "ean.velayo@gmail.com"}'
 ```
 
 Expected response:
@@ -39,7 +39,7 @@ After registering, you can log in:
 ```bash
 curl -X POST http://localhost:3000/user/login \
 -H "Content-Type: application/json" \
--d '{"username": "gelorosi", "password": "gelo12"}'
+-d '{"username": "eanvelayo", "password": "password123"}'
 ```
 
 Expected response:
@@ -47,7 +47,7 @@ Expected response:
 ```json
 {
   "message": "Login successful!",
-  "token": "fake-token-2"
+  "token": "fake-token-3"
 }
 ```
 
@@ -58,15 +58,15 @@ Use the token from the login response for authorization:
 
 ```bash
 curl -X GET http://localhost:3000/user/profile \
--H "Authorization: fake-token-2"
+-H "Authorization: fake-token-3"
 ```
 
 Expected response:
 
 ```json
 {
-  "username": "gelorosi",
-  "email": "gelorosi@gmail.com"
+  "username": "eanvelayo",
+  "email": "ean.velayo@example.com"
 }
 ```
 
@@ -76,7 +76,7 @@ To test rate limiting, make more than 5 requests within 30 seconds:
 ```bash
 for i in {1..6}; do
     curl -X GET http://localhost:3000/user/profile \
-    -H "Authorization: fake-token-2" &
+    -H "Authorization: fake-token-3" &
 done
 ```
 
