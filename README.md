@@ -9,6 +9,7 @@ git clone git@github.com:gellyrslls/3105-backend-exercise.git
 cd 3105-backend-exercise
 npm install
 node app.js
+```
 
 ## Testing
 Use the curl commands shown below to test the API endpoints:
