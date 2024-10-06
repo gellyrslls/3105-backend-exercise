@@ -1,5 +1,5 @@
-# CS 3105 Backend Design Exercise
-Backend exercise using Express.js for my application development class.
+# Backend Design Exercise
+Backend exercise using Node.js and Express.js for my application development class.
 
 [Project Specifications](https://docs.google.com/document/d/14-kD0DeknFrAYVHfabAXzU1MoEpgBrWA_JPN4oLMULU/edit?usp=sharing)
 
